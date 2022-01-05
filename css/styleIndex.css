@@ -1,0 +1,245 @@
+/* Variables */
+:root{
+    --header-footer-color: #c7d9f1;
+    --aside-color: #fce9da;
+    --navigation-color: #eaf2dd;
+    --other-color: #fff;
+}
+
+/* Global */
+.wrapper{
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(100px, auto) / 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/* Header */
+.header{
+    grid-area: header;
+    background-color: var(--header-footer-color);
+    min-height: 100px;
+}
+.header__block{
+    display: grid;
+    grid-template: minmax(100px, auto) / 250px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.header__block-x{
+    background:var(--other-color);
+    order: 0; 
+    padding: 5px; 
+    border: solid black 1px;  
+}
+
+.header__block-1 {
+    justify-self: end;
+    padding-right: 5px;
+    order: 1;
+}
+
+/* Main */
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template: minmax(75px, auto)  1fr minmax(75px, auto)/ minmax(100px, auto) 1fr minmax(100px, auto);
+}
+
+.main__block-2{
+grid-row: 1/4;
+grid-column: 1/2;
+background-color: var(--aside-color);
+}
+
+.list__item{
+    padding-top: 10px;
+}
+
+.main__navigation-3{
+grid-row: 1/2;
+grid-column: 2/4;
+background-color: var(--navigation-color)
+}
+
+.main__navigation{
+    display: grid;
+    grid-template: minmax(75px, auto) / repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.navigation__item:hover{
+    font-size: 20px;
+}
+
+.main__block-4{
+grid-row: 2/3;
+grid-column: 2/3;
+display: grid;
+grid-template: minmax(50px, 0.5fr) 4fr minmax(90px, 1fr)/ 1fr;
+}
+
+/*DropDown adder*/
+.dropdown__main{
+grid-row: 1/2;
+background-color: var(--header-footer-color);
+display: grid;
+justify-items: center;
+align-items: center;
+grid-template: 1fr / 1fr 1fr;
+}
+
+.dropdown__forms-area{
+    grid-row: 2/3;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    justify-items: center;
+    align-items: end;
+    background-color: var(--navigation-color);
+}
+
+.deleteArea{
+    align-self: start;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.deleteInput{
+    margin-top: 10px;
+}
+
+.deleteMenuPoint{
+    margin-top: 10px;
+}
+
+.input-title{
+    font-size: 30px;
+}
+
+.dropdown-input{
+    font-size: 30px;
+    border: black solid 1px;
+    width: 120px;
+}
+
+.dropdown__button-area-footer{
+    grid-row:3/4;
+    background-color: var(--header-footer-color);
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.addMenuPoint, .saveMenuPoint, .deleteMenuPoint{
+    display: block;
+
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-size: 24px;
+    transition: .5s;
+}
+
+.addMenuPoint:hover, .saveMenuPoint:hover, .deleteMenuPoint:hover{
+    background-color: var(--aside-color)
+}
+
+.addMenuPoint:active, .saveMenuPoint:active, .deleteMenuPoint:active{
+    transition: 0s;
+    background-color: var(--navigation-color)
+}
+
+.main__photo{
+    text-align: center;
+}
+
+.main__block-5{
+grid-column: 3/4;
+grid-row: 2/4;
+background-color: var(--aside-color);
+}
+
+.main__block-6{
+grid-column: 2/3;
+grid-row: 3/4;
+background-color: var(--navigation-color);
+text-align: center;
+padding-top: 20px;
+}
+
+/* Footer */
+.footer{
+    grid-area: footer;
+    background-color: var(--header-footer-color);
+    min-height: 100px;
+}
+
+.footer__block{
+    display: grid;
+    grid-template: minmax(100px, auto) / 1fr 250px;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer__block-7{
+justify-self: start;
+padding-left: 5px;
+}
+
+.footer__block-y{
+    background-color:var(--other-color);
+    padding: 5px;
+    border: solid black 1px;
+}
+
+/*DropDown*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
