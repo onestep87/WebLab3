@@ -1,6 +1,7 @@
 ﻿{
   "ConnectionStrings": {
-    "DefaultConnection": "Server=DESKTOP-GD4MU4Q;Database=Lab3;Trusted_Connection=True;"
+
+    "DefaultConnection": "Server=DESKTOP-UATHDNE\\SQLEXPRESS;Database=Lab3;Trusted_Connection=True;"
   }
 }
 

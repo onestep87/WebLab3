@@ -10,7 +10,7 @@ namespace backend.db
     public class Lab3Client
     {
         private ConfigurationBuilder _builder { get; set; }
-        private string _configPath = "D:\\Studies\\Web-programming\\lab3\\backend\\backend\\db\\";
+        private string _configPath = "C:\\Users\\Даниил\\Desktop\\Papka\\lab-3.github.io-main\\WebLab3\\backend\\backend\\db";
         private IConfiguration _config { get; set; }
         private string _connectionString { get; set; }
         private DbContextOptionsBuilder<Lab3Context> _optionsBuilder { get; set; }
