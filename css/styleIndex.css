@@ -20,7 +20,7 @@
 /* Header */
 .header{
     grid-area: header;
-    background-color: var(--header-footer-color);
+    background-color: rgba(255, 255, 128, .5);
     min-height: 100px;
 }
 .header__block{
@@ -52,7 +52,7 @@
 .main__block-2{
 grid-row: 1/4;
 grid-column: 1/2;
-background-color: var(--aside-color);
+background-color: thistle;
 }
 
 .list__item{
@@ -62,7 +62,7 @@ background-color: var(--aside-color);
 .main__navigation-3{
 grid-row: 1/2;
 grid-column: 2/4;
-background-color: var(--navigation-color)
+background-color: lightgreen;
 }
 
 .main__navigation{
@@ -99,7 +99,7 @@ grid-template: 1fr / 1fr 1fr;
     grid-template: 1fr 1fr / 1fr;
     justify-items: center;
     align-items: end;
-    background-color: var(--navigation-color);
+    background-color: rgb(63, 165, 42,0.5);
 }
 
 .deleteArea{
@@ -167,7 +167,7 @@ background-color: var(--aside-color);
 .main__block-6{
 grid-column: 2/3;
 grid-row: 3/4;
-background-color: var(--navigation-color);
+background-color: rgb(63, 165, 42,0.5);
 text-align: center;
 padding-top: 20px;
 }
@@ -175,7 +175,7 @@ padding-top: 20px;
 /* Footer */
 .footer{
     grid-area: footer;
-    background-color: var(--header-footer-color);
+    background-color: thistle;
     min-height: 100px;
 }
 
